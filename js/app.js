@@ -30,7 +30,9 @@ var guessCount;
 		$("#guessList").text(" ");
 		$('#userGuess').val(" ");
 		$('#count').text("1");
-		$(".overlay").hide();
+		$(".overlay").fadeIn(1000);
+		$(".content").fadeIn(1000);
+
 	};
  		newGame();
 	
@@ -85,9 +87,10 @@ var guessCount;
 
 	var winner = function(){
 		$("#feedback").text("WINNER!");
-		$("#info").hide();
+		$("#info").fadeOut(1000);
 		$(".overlay").fadeIn(1000);
-    	$(".winner").fadeIn(1000);
+		$(".winner").fadeIn(1000);
+
   	}
 
 });
